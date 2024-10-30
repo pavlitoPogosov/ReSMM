@@ -64,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="w-full px-4">
+            {/* <div className="w-full px-4">
               <div
                 className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
                 data-wow-delay=".25s"
@@ -1219,7 +1219,7 @@ const Hero = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -25,15 +25,18 @@ export default function Home() {
         <ScrollUp />
         <Hero />
         <Feature
+          imageSrc="/images/features/web.png"
           title="Turn Any Web Page into Social Media Content"
           description="Simply paste a link to a web page your audience will love and instantly get ready-to-share posts for Twitter, Facebook, Reddit, and more."
         />
         <Feature
+          imageSrc="/images/features/youtube.png"
           imagePosition="left"
           title="Turn YouTube Videos into Social Media Content"
           description="Just drop a YouTube link, and effortlessly transform any video into engaging posts for Twitter, Facebook, Reddit, and more."
         />
         <Feature
+          imageSrc="/images/features/scheduler.png"
           imagePosition="right"
           title="Schedule and Post Content in One-Click"
           description="Schedule and publish your content across multiple platforms with a single click, saving time and ensuring your posts reach your audience at the perfect moment."

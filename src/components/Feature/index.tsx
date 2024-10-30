@@ -3,10 +3,12 @@ import Image from "next/image";
 export const Feature = ({
   title,
   description,
+  imageSrc,
   imagePosition = "right",
 }: {
   title: string;
   description: string;
+  imageSrc: string;
   imagePosition?: "left" | "right";
 }) => {
   const backgroundColor =
@@ -36,7 +38,7 @@ export const Feature = ({
             </div>
             <div className="flex w-full justify-center px-4 lg:w-1/2">
               <Image
-                src="/images/hero/hero-image.jpg" // replace with your image path or prop
+                src={imageSrc}
                 alt={title}
                 width={500}
                 height={300}
