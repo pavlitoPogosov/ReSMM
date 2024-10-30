@@ -1,7 +1,6 @@
-import axios from "axios";
+"use client";
 import React from "react";
-import OfferList from "./OfferList";
-import { Price } from "@/types/price";
+import { openWaitListModal } from "../WaitListModal";
 
 export const PricingCard = () => {
   return (
@@ -47,7 +46,7 @@ export const PricingCard = () => {
         </div>
         <div className="w-full">
           <button
-            // onClick={handleSubscription}
+            onClick={openWaitListModal}
             className="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition duration-300 hover:bg-primary/90"
           >
             Join The Waitlist

@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+import { openWaitListModal } from "../WaitListModal";
 
 const CallToAction = () => {
   return (
@@ -21,8 +22,11 @@ const CallToAction = () => {
                   personalized features.
                 </p>
 
-                <button className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]">
-                  Join Now!
+                <button
+                  onClick={openWaitListModal}
+                  className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
+                >
+                  Join The WaitList!
                 </button>
               </div>
             </div>

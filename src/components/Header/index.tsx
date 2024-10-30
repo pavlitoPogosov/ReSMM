@@ -8,7 +8,7 @@ import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 import { UserActions } from "./UserActions";
 
-const Header = () => {
+export const Header = () => {
   const { data: session } = useSession();
 
   const pathUrl = usePathname();
@@ -41,14 +41,12 @@ const Header = () => {
     }
   };
 
-  const { theme, setTheme } = useTheme();
-
   return (
     <>
       <header
         className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+            ? "shadow-nav fixed z-30 border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
             : "absolute bg-transparent"
         }`}
       >
@@ -81,5 +79,3 @@ const Header = () => {
     </>
   );
 };
-
-export default Header;

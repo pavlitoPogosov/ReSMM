@@ -41,9 +41,7 @@ export default function RootLayout({
               defaultTheme="dark"
             >
               <ToasterContext />
-              <Header />
               {children}
-              <Footer />
               <ScrollToTop />
             </ThemeProvider>
           </SessionProvider>
