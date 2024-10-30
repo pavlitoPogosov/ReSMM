@@ -7,7 +7,7 @@ export default function Head() {
         name="description"
         content="Transform any web page or YouTube video into ready-to-publish content for Twitter, Facebook, Reddit, and more."
       />
-      <link rel="icon" href="/images/favicon.ico" />
+      {/* <link rel="icon" href="/images/favicon.ico" /> */}
     </>
   );
 }
